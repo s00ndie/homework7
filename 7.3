@@ -1,4 +1,7 @@
 def second_index(text:str,some_str:str):
-    result = text.find(some_str,text.find(some_str) + 1)
+    if text.count(some_str)>1:
+        result = text.find(some_str,text.find(some_str) + 1)
+    else:
+        result = None
     return result
-print(second_index('sims','s'))
+print(second_index('hi hi','h'))
