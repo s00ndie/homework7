@@ -1,0 +1,7 @@
+def correct_sentences(text:str):
+    if text[-1] != '.':
+        return text.capitalize()+'.'
+    else:
+        return text.capitalize()
+
+print(correct_sentences('pizza.'))
